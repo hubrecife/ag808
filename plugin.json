@@ -1,0 +1,10 @@
+{
+  "name": "ag808",
+  "description": "Agente que avalia a regularidade fiscal de municípios e a aderência às trilhas da Portaria Normativa MF 808/2023 (Siconfi, IBGE e fontes oficiais).",
+  "version": "1.0.0",
+  "author": { "name": "hubrecife" },
+  "repository": "https://github.com/hubrecife/ag808",
+  "license": "MIT",
+  "keywords": ["portaria-808", "financas-publicas", "siconfi", "municipios"],
+  "agents": "agents/"
+}
