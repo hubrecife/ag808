@@ -36,15 +36,15 @@ Requisitos: Windows PowerShell 5.1 (já vem no Windows) ou PowerShell 7 (`pwsh`)
 Modo interativo (recomendado: você aprova os comandos):
 
 ```bash
-copilot --agent avaliador-portaria-808 -i "Avalie Feira de Santana/BA, código IBGE 2910800"
+copilot --agent ag808:avaliador-portaria-808 -i "Avalie Feira de Santana/BA, código IBGE 2910800"
 ```
 
-Ou dentro do Copilot CLI: `/agent` → **avaliador-portaria-808**.
+Ou dentro do Copilot CLI: `/agent` → **ag808:avaliador-portaria-808**.
 
 Modo não interativo (`-p`): o Copilot não pode pedir aprovação, então libere o shell explicitamente:
 
 ```bash
-copilot --agent avaliador-portaria-808 -p "Avalie Feira de Santana/BA, código IBGE 2910800" --allow-tool='shell(powershell:*)' --allow-tool='shell(Get-ChildItem:*)'
+copilot --agent ag808:avaliador-portaria-808 -p "Avalie Feira de Santana/BA, código IBGE 2910800" --allow-tool='shell(powershell:*)' --allow-tool='shell(Get-ChildItem:*)'
 ```
 
 No Linux/macOS troque `powershell` por `pwsh` e `Get-ChildItem` por `find`.
